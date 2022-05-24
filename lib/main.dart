@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'login_page.dart';
-
+import 'package:firebaseflutter/pages/login_page.dart';
+import 'package:firebase_core/firebase_core.dart';
   void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {

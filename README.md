@@ -1,16 +1,18 @@
-# firebaseflutter
+# FIREBASE FLUTTER
 
-A new Flutter project.
+Nama : Aldant Yafi Abida
+NIM  : 2031710009
+Kelas: MI 2C
+Prodi : MI
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Hasil Pratikum
+![Screenshot](assets/1.png)
 
-A few resources to get you started if this is your first Flutter project:
+![Screenshot](assets/2.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Screenshot](assets/3.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot](assets/4.png)
+
+

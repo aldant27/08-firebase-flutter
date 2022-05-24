@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:firebaseflutter/login_page.dart';
+import 'package:firebaseflutter/pages/login_page.dart';
 import 'package:firebaseflutter/sign_in.dart';
 
 class FirstScreen extends StatelessWidget {

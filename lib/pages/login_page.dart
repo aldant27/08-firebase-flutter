@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:firebaseflutter/sign_in.dart';
-import 'package:firebaseflutter/first_screen.dart';
-import 'package:firebaseflutter/home_screen';
-import 'login_email.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebaseflutter/sign_in.dart';
+import 'package:firebaseflutter/pages/first_screen.dart';
+import 'package:firebaseflutter/pages/home_scren.dart';
+import 'package:firebaseflutter/pages/login_email.dart';
+
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -23,14 +24,8 @@ class _LoginPageState extends State<LoginPage> {
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              const Image(
-                image: AssetImage("assets/images/vervenos.png"),
-                height: 150,
-                width: 150,
-              ),
-              const SizedBox(height: 20),
-              const Text("Aldant Yafi Abida -2031710009"),
-              const SizedBox(height: 30),
+              const FlutterLogo(size: 150),
+              const SizedBox(height: 50),
               _signInButton2(),
               const SizedBox(height: 16),
               _signInButton(),
@@ -60,7 +55,7 @@ class _LoginPageState extends State<LoginPage> {
                   } else if (snapshot.hasData) {
                     return const HomeScreen();
                   } else {
-                    return const Loginemail();
+                    return const LoginEmail();
                   }
                 },
               );
@@ -70,22 +65,21 @@ class _LoginPageState extends State<LoginPage> {
       },
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
       highlightElevation: 0,
-      borderSide: const BorderSide(color: Colors.indigo),
+      borderSide: const BorderSide(color: Colors.grey),
       child: Padding(
         padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
-            Image(image: AssetImage("assets/images/email.png"), height: 20),
+            Image(image: AssetImage("assets/email.png"), height: 35.0),
             Padding(
               padding: EdgeInsets.only(left: 10),
               child: Text(
                 'Sign in with Email',
                 style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.indigo,
+                  fontSize: 20,
+                  color: Colors.grey,
                 ),
               ),
             )
@@ -113,22 +107,21 @@ class _LoginPageState extends State<LoginPage> {
       },
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
       highlightElevation: 0,
-      borderSide: const BorderSide(color: Colors.indigo),
+      borderSide: const BorderSide(color: Colors.grey),
       child: Padding(
         padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
-            Image(image: AssetImage("assets/images/google.png"), height: 20),
+            Image(image: AssetImage("assets/google.png"), height: 35.0),
             Padding(
               padding: EdgeInsets.only(left: 10),
               child: Text(
                 'Sign in with Google',
                 style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.indigo,
+                  fontSize: 20,
+                  color: Colors.grey,
                 ),
               ),
             )
@@ -138,3 +131,5 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
+
+
